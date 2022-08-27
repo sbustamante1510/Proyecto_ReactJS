@@ -1,0 +1,35 @@
+.flex-row{
+    display: flex;
+}
+.flex-colum{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    max-width: 1050px;
+    margin: 0 auto;
+}
+header{
+    background-color: #535151;
+}
+.header_nav{
+    justify-content: flex-start;
+    align-items: center;
+    height: 10vh;
+    flex-wrap: wrap;
+}
+.header_img{
+    width: 100px;
+}
+.header_ul{
+    margin-left: 150px;
+    gap: 25px;
+}
+header a{
+    transition: all .5s ease-in;
+}
+header a:hover{
+    font-size: 19px;
+    color: #67A0C1;
+    font-weight: bold;
+}
