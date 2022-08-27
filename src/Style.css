@@ -17,12 +17,14 @@ header{
     align-items: center;
     height: 10vh;
     flex-wrap: wrap;
+    position: relative;
 }
 .header_img{
     width: 100px;
 }
 .header_ul{
-    margin-left: 150px;
+    position: absolute;
+    left: 30%;
     gap: 25px;
 }
 header a{
@@ -32,4 +34,14 @@ header a:hover{
     font-size: 19px;
     color: #67A0C1;
     font-weight: bold;
+}
+.header_carrito{
+    position: absolute;
+    width: 55px;
+    right: 10%;
+}
+
+.listContainer{
+    margin-top: 30px;
+    text-align: center;
 }
