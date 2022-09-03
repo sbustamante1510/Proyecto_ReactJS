@@ -45,3 +45,25 @@ header a:hover{
     margin-top: 30px;
     text-align: center;
 }
+
+.ItemCount{
+    margin: 40px 0;
+}
+.ItemCount p{
+    margin: 15px 0;
+}
+.ItemCount img{
+    width: 250px;
+}
+.ItemCount i{
+    cursor: pointer;;
+}
+.ItemCount span{
+    margin: 0 10px;
+}
+.ItemCount button{
+    margin: 15px 0;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
