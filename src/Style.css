@@ -67,3 +67,13 @@ header a:hover{
     border-radius: 8px;
     cursor: pointer;
 }
+.ItemList{
+    gap: 50px;
+    justify-content: center;
+}
+.Item{
+    margin: 40px 0;
+}
+.Item img{
+    width: 250px;
+}
