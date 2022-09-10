@@ -77,3 +77,15 @@ header a:hover{
 .Item img{
     width: 250px;
 }
+.ItemDetail{
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.ItemDetail picture{
+    width: 300px;
+}
+.ItemDetail h3{
+    margin: 20px 0;
+}

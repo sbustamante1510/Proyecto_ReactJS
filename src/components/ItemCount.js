@@ -1,4 +1,4 @@
-import polo from '../polo.jpg';
+// import polo from '../polo.jpg';
 import React,{useState} from 'react';
 
 const ItemCount = ({stock,initial,onAdd} ) => {
@@ -18,8 +18,7 @@ const ItemCount = ({stock,initial,onAdd} ) => {
 
     return(
         <div className="ItemCount">  
-            <p>Polo cuello V</p>
-            <img src={polo} alt="polo"/>
+            {/* <img src={polo} alt="polo"/> */}
             <p>Stock : {stock} unidades</p>
             <i onClick={decrementoContador} className="fa-solid fa-circle-minus"></i>
             <span>{counter}</span>

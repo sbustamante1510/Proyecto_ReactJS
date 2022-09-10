@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import ItemCount from './ItemCount'
+// import ItemCount from './ItemCount'
 import ItemList from './ItemList'
 import dataJson from '../data.json'
 
@@ -23,7 +23,6 @@ const ItemListContainer = ( {greeting} ) => {
 
         getProducts(dataJson,2000)
             .then(res => {
-                console.log(res);
                 setProducts(res);
             })
             .catch(() => console.log("Hay un error en los productos")); 
@@ -34,7 +33,7 @@ const ItemListContainer = ( {greeting} ) => {
         <div className="container listContainer">
             <p>{greeting}</p>
             <ItemList products={products}/>
-            <ItemCount stock="8" initial="1"/>
+            {/* <ItemCount stock="8" initial="1"/> */}
         </div>
     )
 }

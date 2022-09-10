@@ -3,18 +3,24 @@
         "title": "Polo verde" , 
         "description": "Polo de verano", 
         "prize": "$10",
+        "SKU" : "1815552",
+        "Stock" : "8",
         "pictureURL" : "./poloVerde.jpg"
     },
     {   "id": "2",
         "title": "Jean azul" , 
         "description": "Jean clasico azul", 
         "prize": "$30",
+        "SKU" : "1815565",
+        "Stock" : "10",
         "pictureURL" : "./jeanAzul.jpg"
     },
     {   "id": "3", 
-        "title": "Casaca negra" , 
+        "title": "Casaca" , 
         "description": "Casaca de cuero negra", 
         "prize": "$40",
+        "SKU" : "1815578",
+        "Stock" : "12",
         "pictureURL" : "./casacaNegra.jpg"
     }
 ]
