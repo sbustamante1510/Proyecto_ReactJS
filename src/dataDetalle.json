@@ -1,26 +1,38 @@
 [
     {   "id": "1", 
-        "title": "Polo verde" , 
+        "title": "Polo verde" ,
+        "category": "Polos", 
         "description": "Polo de verano", 
         "prize": "$10",
         "SKU" : "1815552",
         "Stock" : "8",
-        "pictureURL" : "./poloVerde.jpg"
+        "pictureURL" : "./../poloVerde.jpg"
     },
     {   "id": "2",
-        "title": "Jean azul" , 
+        "title": "Jean azul" ,
+        "category": "Jeans",
         "description": "Jean clasico azul", 
         "prize": "$30",
         "SKU" : "1815565",
         "Stock" : "10",
-        "pictureURL" : "./jeanAzul.jpg"
+        "pictureURL" : "./../jeanAzul.jpg"
     },
     {   "id": "3", 
-        "title": "Casaca" , 
+        "title": "Casaca negra" ,
+        "category": "Casacas",
         "description": "Casaca de cuero negra", 
         "prize": "$40",
         "SKU" : "1815578",
         "Stock" : "12",
-        "pictureURL" : "./casacaNegra.jpg"
+        "pictureURL" : "./../casacaNegra.jpg"
+    },
+    {   "id": "4", 
+        "title": "Polo plomo" ,
+        "category": "Polos",
+        "description": "Polo sport", 
+        "prize": "$10",
+        "SKU" : "1815553",
+        "Stock" : "11",
+        "pictureURL" : "./../poloPlomo.jpg"
     }
 ]

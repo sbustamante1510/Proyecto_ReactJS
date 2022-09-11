@@ -70,9 +70,11 @@ header a:hover{
 .ItemList{
     gap: 50px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .Item{
     margin: 40px 0;
+    color: black;
 }
 .Item img{
     width: 250px;
