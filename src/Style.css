@@ -92,12 +92,12 @@ header a:hover{
     margin: 20px 0;
 }
 
-.btn_comprar{
+.btn_comprar ,.btn_endCompra{
     margin-top: 15px;
     padding: 8px 15px;
     border-radius: 10px;
     cursor: pointer;
 }
-.btn_comprar:active{
+.btn_comprar:active ,.btn_endCompra:active{
     background-color: #67A0C1;
 }

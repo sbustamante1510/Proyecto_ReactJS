@@ -23,7 +23,7 @@ const ItemCount = ({stock,initial,onAdd} ) => {
             <i onClick={decrementoContador} className="fa-solid fa-circle-minus"></i>
             <span>{counter}</span>
             <i onClick={incrementoContador} className="fa-solid fa-circle-plus"></i><br/>
-            <button>Agregar al carrito</button>
+            <button onClick={() => onAdd(counter)}>Agregar al carrito</button>
         </div>
     )
 }
