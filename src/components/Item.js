@@ -3,7 +3,7 @@ const Item = ({title,prize,pictureURL}) => {
         <div className="Item">  
             <h3>{title}</h3>
             <img src={pictureURL} alt="imagenItem"/>
-            <p>{prize}</p>
+            <p>${prize}</p>
         </div>
     )
 }

@@ -32,6 +32,7 @@ const ItemListContainer = ( {greeting} ) => {
             .then(res => {
                 // console.log(res);
                 setProducts(res);
+                console.log(products);
             })
             .catch(() => console.log("Hay un error en los productos")); 
 

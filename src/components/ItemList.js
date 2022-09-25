@@ -2,6 +2,8 @@ import {Link} from "react-router-dom"
 import Item from './Item'
 
 const ItemList = ({products}) => {
+    
+
     return(
         <div className='ItemList flex-row'>  
             {products.length ? 

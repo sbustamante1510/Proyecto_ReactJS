@@ -36,9 +36,15 @@ header a:hover{
     font-weight: bold;
 }
 .header_carrito{
+    display: flex;
     position: absolute;
-    width: 55px;
+    width: 59px;
     right: 10%;
+    top: 17%;
+}
+.header_carrito span{
+    color: #000000;
+    margin: 10px 0 0px 6px;
 }
 
 .listContainer{
@@ -100,4 +106,18 @@ header a:hover{
 }
 .btn_comprar:active ,.btn_endCompra:active{
     background-color: #67A0C1;
+}
+
+.cart{
+    text-align: center;
+    margin-top: 40px;
+}
+.Cart__Item picture{
+    width: 180px;
+}
+.Cart__Item button{
+    margin-top: 18px;
+    padding: 7px 8px;
+    border-radius: 6px;
+    cursor: pointer;
 }

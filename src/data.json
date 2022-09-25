@@ -3,28 +3,28 @@
         "title": "Polo verde" ,
         "category": "polos", 
         "description": "Polo de verano", 
-        "prize": "$10",
+        "prize": "10",
         "pictureURL" : "./../poloVerde.jpg"
     },
     {   "id": "2",
         "title": "Jean azul" ,
         "category": "jeans", 
         "description": "Jean clasico azul", 
-        "prize": "$30",
+        "prize": "30",
         "pictureURL" : "./../jeanAzul.jpg"
     },
     {   "id": "3", 
         "title": "Casaca negra" ,
         "category": "casacas", 
         "description": "Casaca de cuero negra", 
-        "prize": "$40",
+        "prize": "40",
         "pictureURL" : "./../casacaNegra.jpg"
     },
     {   "id": "4", 
         "title": "Polo plomo" ,
         "category": "polos", 
         "description": "Polo sport", 
-        "prize": "$10",
+        "prize": "10",
         "pictureURL" : "./../poloPlomo.jpg"
     }
 ]

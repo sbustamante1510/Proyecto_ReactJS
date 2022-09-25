@@ -3,7 +3,7 @@
         "title": "Polo verde" ,
         "category": "Polos", 
         "description": "Polo de verano", 
-        "prize": "$10",
+        "prize": "10",
         "SKU" : "1815552",
         "Stock" : "8",
         "pictureURL" : "./../poloVerde.jpg"
@@ -12,7 +12,7 @@
         "title": "Jean azul" ,
         "category": "Jeans",
         "description": "Jean clasico azul", 
-        "prize": "$30",
+        "prize": "30",
         "SKU" : "1815565",
         "Stock" : "10",
         "pictureURL" : "./../jeanAzul.jpg"
@@ -21,7 +21,7 @@
         "title": "Casaca negra" ,
         "category": "Casacas",
         "description": "Casaca de cuero negra", 
-        "prize": "$40",
+        "prize": "40",
         "SKU" : "1815578",
         "Stock" : "12",
         "pictureURL" : "./../casacaNegra.jpg"
@@ -30,7 +30,7 @@
         "title": "Polo plomo" ,
         "category": "Polos",
         "description": "Polo sport", 
-        "prize": "$10",
+        "prize": "10",
         "SKU" : "1815553",
         "Stock" : "11",
         "pictureURL" : "./../poloPlomo.jpg"

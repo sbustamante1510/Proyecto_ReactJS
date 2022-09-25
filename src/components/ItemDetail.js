@@ -10,13 +10,15 @@ const ItemDetail = ({productDetail}) => {
 
     const [buy,setBuy] = useState(false);
 
-    const addDetailItem = (e) => { 
-        addItem(e);
-        console.log(Cart);
-    }
+    // const addDetailItem = (e) => { 
+    //     addItem(e);
+    //     console.log(Cart);
+    // }
 
     const handlerOnAdd = (e) => {
-        console.log("Se agrego " +e + " productos")
+        // console.log("Se agrego " +e + " productos")
+        addItem({...productDetail,cantidad: e});
+        console.log(Cart);
         setBuy(true)
     }
 
@@ -29,9 +31,9 @@ const ItemDetail = ({productDetail}) => {
             <div>
                 <h3>{productDetail.title}</h3>
                 <p>{productDetail.description}</p>
-                <p>{productDetail.prize}</p>
+                <p>Precio : ${productDetail.prize}</p>
                 <p>SKU : {productDetail.SKU}</p>
-                <button className = "btn_comprar" onClick={() => addDetailItem(productDetail)}>Comprar </button>
+                {/* <button className = "btn_comprar" onClick={() => addDetailItem({productDetail})}>Comprar </button> */}
                 {buy ? (<div>
                             <Link to={'/cart'}>
                                 <button className='btn_endCompra'>Terminar mi compra</button>

@@ -1,7 +1,11 @@
 import {Link} from "react-router-dom"
 import CartWidget from './CartWidget'
+import { useCart } from '../context/CartContext'
 
 const NavBar = () => {
+
+    const {Cart,nroItem} = useCart();
+
     return(
         <header>
             <nav className="header_nav flex-row container">
@@ -23,7 +27,12 @@ const NavBar = () => {
                     {/* <li><a href="./">Blog</a></li>
                     <li><a href="./">Contacto</a></li> */}
                 </ul>
-                <CartWidget/>
+                {Cart.length > 0 && (
+                    <Link to={'/cart'}>
+                        <CartWidget ItemCarrito={nroItem}/>
+                    </Link>
+                    )
+                }
             </nav>
         </header>
     )
