@@ -13,10 +13,8 @@ const CartContextProvider = ({children}) => {
     const addItem = (item) => {
         // setCart(item);
         let indRepeat = 0;
-        console.log(item.id)
         if(Cart.length === 0){
-            setCart(prevState => prevState.concat(item));
-            console.log("Comprobacion 1");      
+            setCart(prevState => prevState.concat(item));   
         }
         // Cart.length === 0 && setCart(prevState => prevState.concat(item))  
         Cart.forEach(e => {
@@ -29,8 +27,7 @@ const CartContextProvider = ({children}) => {
             // indRepeat === 0 && setCart(prevState => prevState.concat(item))
         })
         if(indRepeat === 0 && Cart.length !== 0){
-            setCart(prevState => prevState.concat(item))  ;
-            console.log("Comprobacion 2")  
+            setCart(prevState => prevState.concat(item));
         }
         console.log(Cart)
     }
@@ -52,7 +49,6 @@ const CartContextProvider = ({children}) => {
 
     const nroItem = () => {
         let itemLocal = 0;
-        console.log("Cambio en el carrito");
         Cart.forEach(e => {
             itemLocal = Number(e.cantidad) + itemLocal;
         })

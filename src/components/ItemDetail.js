@@ -4,7 +4,7 @@ import { useCart } from '../context/CartContext'
 import ItemCount from './ItemCount'
 
 
-const ItemDetail = ({productDetail}) => {
+const ItemDetail = ({pictureURL,title,description,prize,SKU,Stock,id}) => {
 
     const {Cart,addItem} = useCart();
 
@@ -17,7 +17,7 @@ const ItemDetail = ({productDetail}) => {
 
     const handlerOnAdd = (e) => {
         // console.log("Se agrego " +e + " productos")
-        addItem({...productDetail,cantidad: e});
+        addItem({title: title,prize:prize,pictureURL: pictureURL,cantidad: e,id:id});
         console.log(Cart);
         setBuy(true)
     }
@@ -26,13 +26,13 @@ const ItemDetail = ({productDetail}) => {
     return (
         <article className="ItemDetail">  
             <picture>
-                <img src={productDetail.pictureURL} alt="imagenItem"/>
+                <img src={pictureURL} alt="imagenItem"/>
             </picture>
             <div>
-                <h3>{productDetail.title}</h3>
-                <p>{productDetail.description}</p>
-                <p>Precio : ${productDetail.prize}</p>
-                <p>SKU : {productDetail.SKU}</p>
+                <h3>{title}</h3>
+                <p>{description}</p>
+                <p>Precio : ${prize}</p>
+                <p>SKU : {SKU}</p>
                 {/* <button className = "btn_comprar" onClick={() => addDetailItem({productDetail})}>Comprar </button> */}
                 {buy ? (<div>
                             <Link to={'/cart'}>
@@ -40,7 +40,7 @@ const ItemDetail = ({productDetail}) => {
                             </Link>
                         </div>
                     ) : (
-                        <ItemCount stock={productDetail.Stock} initial="1" onAdd={handlerOnAdd}/>
+                        <ItemCount stock={Stock} initial="1" onAdd={handlerOnAdd}/>
                 )}
             </div>
         </article>
