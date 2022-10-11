@@ -11,7 +11,7 @@ body{
   min-height: 100vh;
 }
 
-p,ul,button{
+p,ul,button,label,input{
   font-family: 'Comfortaa', cursive;
 }
 
@@ -32,8 +32,8 @@ img{
 }
 input, textarea{
   display: block;
-  margin: 15px 0px;
-  width: 80%;
+  /* margin: 10px 0px; */
+  width: 100%;
   padding: 10px;
   border-radius: 6px;
   border: 2px solid #ffe284;

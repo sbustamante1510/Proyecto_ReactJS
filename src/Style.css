@@ -121,3 +121,33 @@ header a:hover{
     border-radius: 6px;
     cursor: pointer;
 }
+.cart_button{
+    padding: 7px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 18px 10px;
+}
+.checkout{
+    margin-top: 30px;
+}
+.checkout h2{
+    text-align: center;
+}
+.data_in{
+    margin: 20px 0;
+}
+.container_formulario{
+    margin: 0 auto;
+    width: 50%;
+}
+.container_formulario button{
+    padding: 7px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.formulario_compraOk p{
+    margin: 20px 0 ;
+}
+.formulario_compraOk span{
+    font-weight: bold;
+}

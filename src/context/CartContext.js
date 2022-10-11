@@ -32,7 +32,7 @@ const CartContextProvider = ({children}) => {
         console.log(Cart)
     }
 
-    const clear = () => { setCart([]) }
+    const clearCart = () => { setCart([]) }
 
     const sumaItem = () => {
         let sumaTotal = 0;
@@ -58,7 +58,7 @@ const CartContextProvider = ({children}) => {
     const context = {
         Cart,
         addItem,
-        clear,
+        clearCart,
         sumaItem,
         eliminarItem,
         nroItem,

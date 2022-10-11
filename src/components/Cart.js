@@ -6,7 +6,7 @@ import {Link} from "react-router-dom"
 
 export const Cart = () => {
 
-    const {Cart,sumaItem,eliminarItem} = useCart();
+    const {Cart,sumaItem,eliminarItem,clearCart} = useCart();
 
     useEffect(() => {
         console.log(Cart)
@@ -18,6 +18,10 @@ export const Cart = () => {
         eliminarItem(idRemove.id);
     }
 
+    const CarritoEliminarTotal = () => {
+        clearCart();
+    }
+
     return (
         <>
         {Cart.length > 0 ? (
@@ -27,6 +31,10 @@ export const Cart = () => {
                     <CartDetail key={e.id} {...e} onRemove={CarritoItemEliminar}/>
                 )}
                 <h3>Total : ${sumaItem()}</h3>
+                <Link to={'/checkout'}>
+                    <button className='cart_button'>Check-Out</button>
+                </Link>
+                <button onClick={CarritoEliminarTotal} className='cart_button'>Limpiar Carrito</button>
             </div>
         ) : (
             <div className='container cart Cart__Item'>
