@@ -1,6 +1,6 @@
 # Proyecto de React para la comision 34730
 
-Este proyecto incluye una variedad de ejemplos de diversos conceptos de React
+Este proyecto trata sobre una tienda de ropa online, donde se aplica diversos conceptos de React como:
 - useState
 - useEffect
 - useContext
