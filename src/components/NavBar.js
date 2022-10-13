@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom"
 import CartWidget from './CartWidget'
 import { useCart } from '../context/CartContext'
+import logo from './../logoRopa.jpg';
 
 const NavBar = () => {
 
@@ -9,9 +10,9 @@ const NavBar = () => {
     return(
         <header>
             <nav className="header_nav flex-row container">
-                <h1>
-                    <Link to={'/'}>LOGO ROPA</Link>
-                </h1> 
+                <picture className="header_logo">
+                    <Link to={'/'}><img src={logo} alt="logo"/></Link>
+                </picture>
                 <ul className="header_ul flex-row">
                     {/* <li><a href="./">Home</a></li>
                     <li><a href="./">Nosotros</a></li> */}

@@ -151,3 +151,6 @@ header a:hover{
 .formulario_compraOk span{
     font-weight: bold;
 }
+.header_logo{
+    width: 95px;
+}
